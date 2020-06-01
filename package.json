@@ -1,0 +1,49 @@
+{
+  "name": "enerjog-website",
+  "version": "1.0.0",
+  "description": "Nuxt.js project",
+  "engines": {
+    "node": "10.x",
+    "npm": "6.x"
+  },
+  "author": "kartsridhar <contactkarthik34@gmail.com>",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint",
+    "heroku-postbuild": "npm run build"
+  },
+  "dependencies": {
+    "@nuxtjs/auth": "^4.9.1",
+    "@nuxtjs/axios": "^5.10.3",
+    "axios": "^0.19.2",
+    "body-parser": "1.19.0",
+    "cross-env": "^7.0.2",
+    "dotenv": "8.1.0",
+    "express": "^4.17.1",
+    "express-validator": "6.1.1",
+    "jquery": "^3.4.1",
+    "mysql2": "^1.7.0",
+    "nuxt": "^2.0.0",
+    "pg": "^8.2.1",
+    "sequelize": "5.18.1",
+    "vue-i18n": "^8.15.4",
+    "vue-smooth-scroll": "^1.0.13",
+    "vuelidate": "^0.7.5"
+  },
+  "devDependencies": {
+    "@nuxtjs/vuetify": "^1.11.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^4.19.1",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-vue": "^4.0.0",
+    "node-sass": "^4.13.1",
+    "sass-loader": "^8.0.2",
+    "sequelize-cli": "5.5.1"
+  }
+}
