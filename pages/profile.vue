@@ -12,6 +12,14 @@
           {{ loggedInUser.email }}
         </p>
         <p>
+          <strong>Model:</strong>
+          {{ loggedInUser.model }}
+        </p>
+        <p>
+          <strong>Colour:</strong>
+          {{ loggedInUser.colour }}
+        </p>                
+        <p>
           <strong>Order Status:</strong>
           PENDING
         </p>
