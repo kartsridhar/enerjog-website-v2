@@ -12,10 +12,6 @@
           {{ loggedInUser.email }}
         </p>
         <p>
-          <strong>Model:</strong>
-          {{ loggedInUser.model }}
-        </p>
-        <p>
           <strong>Order Status:</strong>
           PENDING
         </p>

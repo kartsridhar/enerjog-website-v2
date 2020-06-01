@@ -44,18 +44,6 @@
                 >
               </div>
             </div>
-            <div class="field">
-              <label class="label">Model</label>
-              <div class="control">
-                <input
-                  type="text"
-                  class="input"
-                  name="model"
-                  v-model="model"
-                  required
-                >
-              </div>
-            </div>
             <div class="control">
               <button type="submit" class="button is-dark is-fullwidth">Register</button>
             </div>
@@ -85,7 +73,6 @@ export default {
       username: '',
       email: '',
       password: '',
-      model: '',
       error: null
     }
   },
@@ -97,7 +84,6 @@ export default {
           username: this.username,
           email: this.email,
           password: this.password,
-          model: this.model
         })
 
         await this.$auth.loginWith('local', {
@@ -107,7 +93,7 @@ export default {
           },
         })
 
-        this.$router.push('/')
+        this.$router.push('/profile')
       } catch (e) {
         this.error = e.response.data.message
       }
