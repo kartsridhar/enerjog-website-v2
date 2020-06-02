@@ -1,5 +1,4 @@
 <template>
-<div>
     <div class="container">
         <Navbar/>
       <h2 class="title">My Profile</h2>
