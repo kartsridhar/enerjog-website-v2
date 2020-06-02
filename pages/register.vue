@@ -114,6 +114,7 @@ export default {
   methods: {
     async register() {
       try {
+        
         await this.$axios.post('register', {
           username: this.username,
           email: this.email,
