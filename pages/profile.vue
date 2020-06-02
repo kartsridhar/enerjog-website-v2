@@ -12,7 +12,7 @@
           {{ loggedInUser.email }}
         </p>
         <p>
-          <strong>Model:</strong>
+          <strong>Model:</strong> 
           {{ loggedInUser.model }}
         </p>
         <p>
@@ -48,6 +48,7 @@
               </div>
             </div>            
             <div class="control">
+              
               <button type="submit" class="button is-dark is-fullwidth">Register</button>
             </div>
     </form>
@@ -90,9 +91,9 @@ export default {
           model: this.model,
           colour: this.colour
         })
-
       this.$router.push('/profile')
-      } catch (e) {
+      } 
+      catch (e) {
         this.error = e.response.data.message
       }
     }
