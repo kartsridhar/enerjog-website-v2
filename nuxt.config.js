@@ -43,8 +43,8 @@ module.exports = {
     '@nuxtjs/auth'   
   ],
   axios: {
-    // baseURL: 'https://enerjog-api.herokuapp.com/api'
-    baseURL: 'http://127.0.0.1:3333/api'
+    baseURL: 'https://enerjog-api.herokuapp.com/api'
+    // baseURL: 'http://127.0.0.1:3333/api'
   },
   auth: {
     strategies: {
