@@ -1,49 +1,61 @@
 <template>
-  <section class="section">
-      <Navbar/>
-    <div class="container">
-      <div class="columns">
-        <div class="column is-4 is-offset-4">
-          <h2 class="title has-text-centered">Welcome back!</h2>
+  <div>
+    <Navbar/>
+      <div class="main-register-container">
+        <div class="fitness-img">
+          <img src="~/assets/img/svg/undraw_fitness.svg"/>
+        </div>     
 
-          <Notification :message="error" v-if="error"/>
+        <div class="register-container">
 
           <form method="post" @submit.prevent="login">
-            <div class="field">
-              <label class="label">Email</label>
-              <div class="control">
-                <input
-                  type="email"
-                  class="input"
-                  name="email"
-                  v-model="email"
-                >
+
+            <img class="avatar-img" src="~/assets/img/svg/undraw_order.svg"/>
+            <h2>Login</h2>     
+
+            <Notification :message="error" v-if="error"/>
+
+            <!-- Email -->
+            <div class="input-div two">
+
+              <div class="i">
+							  <i class="fas fa-envelope-square"/>
+						  </div>
+
+              <div>
+                <h5>E-mail</h5>
+                <input type="email" class="inputt" name="email" v-model="email" placeholder="E-mail" required>
               </div>
+
             </div>
-            <div class="field">
-              <label class="label">Password</label>
-              <div class="control">
-                <input
-                  type="password"
-                  class="input"
-                  name="password"
-                  v-model="password"
-                >
+
+            <!-- Password -->
+            <div class="input-div three">
+
+              <div class="i">
+							  <i class="fas fa-key"/>
+						  </div>
+
+              <div>
+                <h5>Password</h5>
+                <input type="password" class="inputt" name="password" v-model="password" placeholder="Password" required>
               </div>
+
             </div>
-            <div class="control">
-              <button type="submit" class="button is-dark is-fullwidth">Log In</button>
-            </div>
+
+            <div>
+              <button type="submit" class="submit-btn">Login</button>
+            </div>        
+
+            <div style="margin-top: 20px">
+              Don't have an account? <nuxt-link to="/register">Register</nuxt-link>
+            </div>                  
+
           </form>
-          <div class="has-text-centered" style="margin-top: 20px">
-            <p>
-              Don't have an account? <nuxt-link to="/register">Register to place an order</nuxt-link>
-            </p>
-          </div>
-        </div>
+
+        </div>       
       </div>
-    </div>
-  </section>
+  </div>
 </template>
 
 <script>
@@ -83,3 +95,7 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+	@import "~/assets/scss/register.scss";
+</style>
