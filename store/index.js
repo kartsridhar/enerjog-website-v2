@@ -2,9 +2,9 @@ export const state = () => ({
   current_model : '',
   current_colour : '',
   models: [
-    {id: 1, name: 'Standard (no recharge on movement)'},
-    {id: 2, name: 'Pro (recharge and heart rate on movement)'},
-    {id: 3, name: 'Custom (Pro features, with spare battery)'}
+    {id: 1, name: 'Standard'},
+    {id: 2, name: 'Pro'},
+    {id: 3, name: 'Custom'}
   ],
   colours: [
     {id: 1, name: 'Bold Blue'},

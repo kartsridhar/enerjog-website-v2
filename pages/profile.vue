@@ -64,9 +64,9 @@ export default {
     return {
       model: '',
       models: [
-        {id: 1, name: 'Standard (no recharge on movement)'},
-        {id: 2, name: 'Pro (recharge and heart rate on movement)'},
-        {id: 3, name: 'Custom (Pro features, with spare battery)'}
+        {id: 1, name: 'Standard'},
+        {id: 2, name: 'Pro'},
+        {id: 3, name: 'Custom'}
       ],
       colour: '',
       colours: [

@@ -5,7 +5,7 @@
 		</head>
     <div class="container">
       <div class="navbar-brand">
-        <nuxt-link class="navbar-item" to="/">Enerjog</nuxt-link>
+        <nuxt-link class="navbar-item" to="/">Home</nuxt-link>
         <button class="button navbar-burger">
           <span></span>
           <span></span>
