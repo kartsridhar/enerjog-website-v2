@@ -1,6 +1,7 @@
 <template>
+<div>
+  <Navbar/>
     <div class="container">
-        <Navbar/>
       <h2 class="title">My Profile</h2>
       <div class="content">
         <p>
@@ -52,6 +53,7 @@
               <button type="submit" class="button is-dark is-fullwidth">Register</button>
             </div>
     </form>
+</div>
 </div>
 </template>
 
