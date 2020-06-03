@@ -1,14 +1,35 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-  }
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
 
 .animated-svg-container {
   position: fixed;
-  top: 60%;
-  left: 50%;
+  top: 30%;
+  left: 10%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+.outerWrapper {
+  width: 800px;
+  height: 300px;
+  position: relative;
+}
+
+.outerWrapper svg {
+  position: absolute;
+  // jump path
+  // offset-path: path("M.4 84.1s127.4 188 267.7 0 247.3 0 247.3 0");
+  //random path
+  // offset-path: path('M900,190  L993,245 V201  A11,11 0 0,1 1004,190  H1075  A11,11 0 0,1 1086,201  V300  L1294,423 H1216  A11,11 0 0,0 1205,434  V789  A11,11 0 0,1 1194,800  H606  A11,11 0 0,1 595,789  V434  A11,11 0 0,0 584,423  H506 L900,190');
+  offset-path: path("M30,30 L770,30");
+  animation: move 2000ms;
+  animation-iteration-count: infinite;
+}
+@keyframes move {
+  100% {
+    offset-distance: 100%;
+  }
 }
