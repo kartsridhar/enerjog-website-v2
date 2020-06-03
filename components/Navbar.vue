@@ -1,5 +1,8 @@
 <template>
   <nav class="navbar is-light">
+    <head>
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+		</head>
     <div class="container">
       <div class="navbar-brand">
         <nuxt-link class="navbar-item" to="/">Enerjog</nuxt-link>
