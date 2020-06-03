@@ -82,6 +82,10 @@ export default {
     middleware: 'auth',
     computed: {
         ...mapGetters(['loggedInUser'])
+        // model:{set(value){
+        //   this.$store.commit('changeModel',value)
+        // },
+
     },
     methods:{
     async change() {
@@ -91,7 +95,8 @@ export default {
           model: this.model,
           colour: this.colour
         })
-      this.$router.push('/profile')
+      
+      this.$router.go(0)
       } 
       catch (e) {
         this.error = e.response.data.message
@@ -101,5 +106,5 @@ export default {
     components: {
         Navbar
     }
-}
+    }
 </script>
