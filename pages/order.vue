@@ -15,11 +15,6 @@
     <div class="outerWrapper" id="outerWrapper">
     <div class="animated-svg-container">
       <svg width="250" height="300" viewBox="20 0 250 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-        <style>
-          .skin {
-            fill: #D2691E;
-          }
-        </style>
         
         <g id="arm-left" transform="translate(150,105)" >
 
@@ -34,7 +29,7 @@
                                 begin="0s" dur="1.1s" repeatCount="indefinite" 
                                 values="-120 5,0; 0 5,0; -120 5,0" />
 
-              <rect width="10" height="50" class="skin" />
+              <rect width="10" height="50" class="skin" fill: #D2691E/>
           </g>
         </g>  <!--arm-left-->
         
@@ -50,7 +45,7 @@
                                   begin="0s" dur="1.1s" repeatCount="indefinite" 
                                   values="100; -20; 100" />
 
-                <rect width="10" height="50" class="skin" />
+                <rect width="10" height="50" class="skin" fill: #D2691E/>
                 
                 <g id="leg-left-foot" transform="translate(0,50)">
                     <animateTransform attributeName="transform" type="rotate" additive="sum" 
@@ -68,7 +63,7 @@
           <rect width="30" height="80" fill="#817fe3" />
         </g>
         <g id="head" transform="translate(140,20)" >
-          <ellipse cx="50" cy="30" rx="22" ry="27" class="skin" transform="rotate(20)" />
+          <ellipse cx="50" cy="30" rx="22" ry="27" class="skin" transform="rotate(20)" fill: #D2691E />
         </g>
 
         
@@ -84,7 +79,7 @@
                                   begin="0s" dur="1.1s" repeatCount="indefinite" 
                                   values="-20; 100; -20" />
 
-                <rect width="10" height="50" class="skin" />
+                <rect width="10" height="50" class="skin" fill: #D2691E/>
                 
                 <g id="leg-right-foot" transform="translate(0,50)">
                     <animateTransform attributeName="transform" type="rotate" additive="sum" 
@@ -109,7 +104,7 @@
                                   begin="0s" dur="1.1s" repeatCount="indefinite" 
                                   values="0 5,0; -120 5,0; 0 5,0" />
 
-                <rect width="10" height="50" class="skin" />
+                <rect width="10" height="50" class="skin" fill: #D2691E/>
             </g>
           <g>
           </g>
