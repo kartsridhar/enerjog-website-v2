@@ -52,8 +52,15 @@
               
               <button type="submit" class="button is-dark is-fullwidth">Register</button>
             </div>
+
     </form>
+  <form method="post" @submit.prevent="deleteRec">
+    <div class= "control">
+      <button type="submit" class="button btn-danger is-dark is-fullwidth">Delete Account</button>
+    </div>
+  </form>
 </div>
+
 </div>
 </template>
 
@@ -99,6 +106,21 @@ export default {
         })
       
       this.$router.go(0)
+      } 
+      catch (e) {
+        this.error = e.response.data.message
+      }
+    },
+    async deleteRec() {
+      try {
+        console.log("got here")
+        
+        await this.$axios.post('destroy', {
+          delete: 'true'
+          
+        })
+      await this.$auth.logout();
+      // this.$router.push("/")
       } 
       catch (e) {
         this.error = e.response.data.message
