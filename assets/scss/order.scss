@@ -6,11 +6,11 @@
 }
 
 .animated-svg-container {
-  position: fixed;
-  top: 30%;
-  left: 10%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  display: block;
+  width: 100%;
+  height: 100%;
+  // -webkit-transform: translate(-50%, -50%);
+  // transform: translate(-50%, -50%);
 }
 .outerWrapper {
   width: 100%;
@@ -49,7 +49,12 @@
 // }
 
 .outerWrapper svg {
-  position: absolute;
+  position: relative;
+  width: 94%;
+  height: 70vh;
+  overflow: hidden;
+  min-width: 100px;
+  min-height: 170px;
   // jump path
   // offset-path: path("M.4 84.1s127.4 188 267.7 0 247.3 0 247.3 0");
   //random path
