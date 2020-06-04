@@ -6,11 +6,11 @@
 }
 
 .animated-svg-container {
-  position: fixed;
-  top: 65%;
+  position: relative;
+  top: 40%;
   left: 10%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  // -webkit-transform: translate(-50%, -50%);
+  // transform: translate(-50%, -50%);
 }
 .outerWrapper {
   width: 100%;
@@ -22,11 +22,7 @@
   object-fit: cover;
   overflow: hidden;  
 }
-@media screen and (max-width: 1024px) { /* Specific to this particular image */
-  .outerWrapper {
-  background-repeat: no-repeat;
-  }
-  }
+
 // .img {
 //   //  width:100%;
 //   //  height:300px;
@@ -49,20 +45,41 @@
 // }
 
 .outerWrapper svg {
-  position: relative;
-  min-width: 100px;
-  min-height: 170px;
-  width: 94%;
-  height: 70vh;
-  // jump path
+  position: absolute;
+
+  // jump path  max-height: 100px;
+  margin: auto;
   // offset-path: path("M.4 84.1s127.4 188 267.7 0 247.3 0 247.3 0");
   //random path
   // offset-path: path('M900,190  L993,245 V201  A11,11 0 0,1 1004,190  H1075  A11,11 0 0,1 1086,201  V300  L1294,423 H1216  A11,11 0 0,0 1205,434  V789  A11,11 0 0,1 1194,800  H606  A11,11 0 0,1 595,789  V434  A11,11 0 0,0 584,423  H506 L900,190');
   offset-path: path("M30,30 L770,30");
-  overflow: hidden;
   animation: move 2000ms;
   animation-iteration-count: infinite;
-  
+}
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+  .outerWrapper {
+  background-repeat: no-repeat;
+
+  }
+}
+@media screen and (max-width: px) { /* Specific to this particular image */
+  .outerWrapper {
+  background-repeat: no-repeat;
+
+  }
+  .animated-svg-container {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .outerWrapper svg {
+  position: relative;
+  width: 94%;
+  height: 70vh;
+  overflow: hidden;
+  min-width: 100px;
+  min-height: 170px;
+  }
 }
 @keyframes move {
   100% {
