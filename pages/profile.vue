@@ -33,7 +33,8 @@
           </div>
 
           <!-- Edit Dialog -->
-          <div v-show="showEditModal" class="modal is-active">         
+          <div v-show="showEditModal" class="modal is-active" id="main-edit-dialog">         
+            <center>
             <div class="modal-background"></div>
             <div class="modal-content">
                 <div class="box" id="edit-things">
@@ -68,16 +69,33 @@
                 </div>
             </div>
             <button @click.prevent="toggleModal" class="modal-close"></button>
+            </center>
           </div>
         </div>
 
         <!-- Delete stuff -->
         <div class="delete-stuff">
-          <form method="post" @submit.prevent="deleteRec">
+          <!-- <form method="post" @submit.prevent="deleteRec"> -->
             <div class="new-btn">
-              <button type="submit" id="delete-btn">Delete Account</button>
+              <button @click.prevent="toggleConfirm" type="submit" id="delete-btn">Delete Account</button>
             </div>
-          </form>
+
+            <div v-show="showDeleteModal" class="modal is-active" id="main-delete-dialog">
+              <center>
+              <div class="modal-background"></div>
+              <div class="modal-content">
+                <div class="box" id="delete-buttons">
+                  <form method="post" @submit.prevent="deleteRec">
+                    <label><strong>Are you sure you want to delete your account?</strong></label>
+                    <br>
+                    <button type="submit" id="delete-yes">Yes</button>
+                    <button type="submit" id="delete-no" @click.prevent="toggleConfirm">No</button>
+                  </form>
+                </div>
+              </div>
+              <button @click.prevent="toggleConfirm" class="modal-close"></button>
+              </center>
+            </div>
         </div>
 
     </div>
@@ -107,6 +125,7 @@ export default {
       ],
       error: null,
       showEditModal: false,
+      showDeleteModal: false,
     }
   },
     middleware: 'auth',
@@ -127,31 +146,27 @@ export default {
       catch (e) {
         this.error = e.response.data.message
       }
-      this.showEditModal = !this.showEditModal;
+      this.showEditModal = false;
     },
     async deleteRec() {
-      var check = window.confirm("Are you sure you want to delete your account?")
-
-      if(check) {
-        try {
-          console.log("got here")
-          
-          await this.$axios.post('destroy', {
-            delete: 'true'
-          })
-        await this.$auth.logout();
-        // this.$router.push("/")
-        } 
-        catch (e) {
-          this.error = e.response.data.message
-        }
+      try {
+        console.log("got here")
+        
+        await this.$axios.post('destroy', {
+          delete: 'true'
+        })
+      await this.$auth.logout();
+      } 
+      catch (e) {
+        this.error = e.response.data.message
       }
-      else {
-
-      }
+      this.showDeleteModal = false;
     }, 
     toggleModal() {
       this.showEditModal = !this.showEditModal;
+    },
+    toggleConfirm() {
+      this.showDeleteModal = !this.showDeleteModal;
     }
     },
     components: {

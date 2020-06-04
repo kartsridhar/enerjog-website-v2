@@ -119,7 +119,7 @@ export default {
             if (window.scrollY > 10) {
                 this.fixedOnScroll = true
                 document.addEventListener("DOMContentLoaded", function() { 
-                document.querySelector('.main-header').classList.add('scrolled')
+                document.querySelector('.main-header').classList.add('scrolled');
                 });
             }
             else {

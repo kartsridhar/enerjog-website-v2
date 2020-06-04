@@ -100,7 +100,7 @@
             </div>         
 
             <div style="margin-top: 20px">
-              Already got an account? <nuxt-link to="/login">Login</nuxt-link>
+              Already have an account? <nuxt-link to="/login">Login</nuxt-link>
             </div>
 
           </form>

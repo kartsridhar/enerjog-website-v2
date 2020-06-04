@@ -1,78 +1,107 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-  }
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
 
 .profile-content p {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 .things-to-shift {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 
 #edit-things {
-  text-align: center;
+text-align: center;
 }
 
 #confirm-btn
 {
-    padding: 10px 10px;
-    font-size: 16px;
-    color: white;
-    background: rgb(56, 112, 114);
-    border: none;
-    font-weight: 700;
-    outline: none;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: opacity .3s linear;
+  padding: 10px 10px;
+  font-size: 16px;
+  color: white;
+  background: rgb(56, 112, 114);
+  border: none;
+  font-weight: 700;
+  outline: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: opacity .3s linear;
 }
 
-  .new-btn {
-    width: 360px;
-    margin: 0 auto;
-  }
+.new-btn {
+  width: 360px;
+  margin: 0 auto;
+}
 
-  .delete-stuff {
-    width: 360px;
-    margin: 0 auto;
-  }
+.delete-stuff {
+  width: 360px;
+  margin: 0 auto;
+}
 
-  #open-modal {
-    display: block;
-    width: 100%;
-    height: 50px;
-    border-radius: 25px;
-    margin: 1rem 0;
-    font-size: 1.2rem;
-    outline: none;
-    border: none;
-    background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f);
-    cursor: pointer;
-    color: #fff;
-    font-family: 'Poppins', sans-serif;
-    background-size: 200%;
-    text-transform: uppercase;
-    transition: .5s;
-  }
+#open-modal {
+  display: block;
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  outline: none;
+  border: none;
+  background-image: linear-gradient(to right, #32be8f, #38d39f, #32be8f);
+  cursor: pointer;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  background-size: 200%;
+  text-transform: uppercase;
+  transition: .5s;
+}
 
-  #delete-btn {
-    display: block;
-    width: 100%;
-    height: 50px;
-    border-radius: 25px;
-    margin: 1rem 0;
-    font-size: 1.2rem;
-    outline: none;
-    border: none;
-    background-image: linear-gradient(to right, #c91e12, #860808, #c91e12);
-    cursor: pointer;
-    color: #fff;
-    font-family: 'Poppins', sans-serif;
-    background-size: 200%;
-    text-transform: uppercase;
-    transition: .5s;
-  }
+#open-modal:hover {
+  background-position: right;
+  filter: brightness(80%);
+}
+
+#delete-btn {
+  display: block;
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  outline: none;
+  border: none;
+  background-image: linear-gradient(to right, #c91e12, #860808, #c91e12);
+  cursor: pointer;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  background-size: 200%;
+  text-transform: uppercase;
+  transition: .5s;
+}
+
+#delete-btn:hover {
+  background-position: right;
+  filter: brightness(80%);
+}
+
+#delete-yes, #delete-no
+{
+  padding: 10px 10px;
+  font-size: 16px;
+  color: white;
+  background: rgb(56, 112, 114);
+  border: none;
+  font-weight: 700;
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: opacity .3s linear;
+}
+
+#delete-yes:hover, #delete-no:hover {
+background-position: right;
+filter: brightness(80%);
+}
