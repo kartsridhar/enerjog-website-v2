@@ -129,7 +129,7 @@ export default {
     }
   },
     middleware: 'auth',
-    mounted(){this.reloadpage()},
+    created(){this.reloadpage()},
 
     computed: {
         ...mapGetters(['loggedInUser'])
