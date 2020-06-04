@@ -1,4 +1,5 @@
 <template>
+  <client-only>
     <div>
       <Navbar/>
 
@@ -68,7 +69,7 @@
               <div>
                 <h5>Model</h5>
                 <select v-model="model" class="dropdown">
-                  <option v-for="m in models" v-bind:key="{ id: m.id, text: m.name }">
+                  <option v-for="(m, idx) in models" :key="idx">
                     {{m.name}}
                   </option>
                 </select>
@@ -85,8 +86,8 @@
 
               <div>
                 <h5>Colour</h5>
-                <select v-model="colour" class="dropdown">
-                  <option v-for="c in colours" v-bind:key="{ id: c.id, text: c.name }">                    
+                <select v-model="colour" class="dropdown">               
+                  <option v-for="(c, idx) in colours" :key="idx">
                     {{c.name}}
                   </option>
                 </select>
@@ -109,6 +110,7 @@
       </div>
 
     </div>
+  </client-only>
 </template>
 
 <script>

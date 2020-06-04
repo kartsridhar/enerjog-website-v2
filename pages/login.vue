@@ -1,61 +1,63 @@
 <template>
-  <div>
-    <Navbar/>
-      <div class="main-register-container">
-        <div class="fitness-img">
-          <img src="~/assets/img/svg/undraw_fitness.svg"/>
-        </div>     
+  <client-only>
+    <div>
+      <Navbar/>
+        <div class="main-register-container">
+          <div class="fitness-img">
+            <img src="~/assets/img/svg/undraw_fitness.svg"/>
+          </div>     
 
-        <div class="register-container">
+          <div class="register-container">
 
-          <form method="post" @submit.prevent="login">
+            <form method="post" @submit.prevent="login">
 
-            <img class="avatar-img" src="~/assets/img/svg/undraw_order.svg"/>
-            <h2>Login</h2>     
+              <img class="avatar-img" src="~/assets/img/svg/undraw_order.svg"/>
+              <h2>Login</h2>     
 
-            <Notification :message="error" v-if="error"/>
+              <Notification :message="error" v-if="error"/>
 
-            <!-- Email -->
-            <div class="input-div two">
+              <!-- Email -->
+              <div class="input-div two">
 
-              <div class="i">
-							  <i class="fas fa-envelope-square"/>
-						  </div>
+                <div class="i">
+                  <i class="fas fa-envelope-square"/>
+                </div>
 
-              <div>
-                <h5>E-mail</h5>
-                <input type="email" class="inputt" name="email" v-model="email" placeholder="E-mail" required>
+                <div>
+                  <h5>E-mail</h5>
+                  <input type="email" class="inputt" name="email" v-model="email" placeholder="E-mail" required>
+                </div>
+
               </div>
 
-            </div>
+              <!-- Password -->
+              <div class="input-div three">
 
-            <!-- Password -->
-            <div class="input-div three">
+                <div class="i">
+                  <i class="fas fa-key"/>
+                </div>
 
-              <div class="i">
-							  <i class="fas fa-key"/>
-						  </div>
+                <div>
+                  <h5>Password</h5>
+                  <input type="password" class="inputt" name="password" v-model="password" placeholder="Password" required>
+                </div>
 
-              <div>
-                <h5>Password</h5>
-                <input type="password" class="inputt" name="password" v-model="password" placeholder="Password" required>
               </div>
 
-            </div>
+              <div>
+                <button type="submit" class="submit-btn">Login</button>
+              </div>        
 
-            <div>
-              <button type="submit" class="submit-btn">Login</button>
-            </div>        
+              <div style="margin-top: 20px">
+                Don't have an account? <nuxt-link to="/register">Register</nuxt-link>
+              </div>                  
 
-            <div style="margin-top: 20px">
-              Don't have an account? <nuxt-link to="/register">Register</nuxt-link>
-            </div>                  
+            </form>
 
-          </form>
-
-        </div>       
-      </div>
-  </div>
+          </div>       
+        </div>
+    </div>
+  </client-only>
 </template>
 
 <script>
