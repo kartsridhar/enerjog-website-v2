@@ -39,6 +39,7 @@
             <div class="modal-content">
                 <div class="box" id="edit-things">
                   <!-- Edit details form  -->
+                  <center>
                   <form method="post" @submit.prevent="change">
                     <div>
                       <label><strong>Model</strong></label>
@@ -50,6 +51,7 @@
                         </select>
                       </div>
                     </div>
+                    
 
                     <div class="field">
                       <label><strong>Colour</strong></label>
@@ -66,13 +68,13 @@
                       <button type="submit" id="confirm-btn">Confirm</button>
                     </div>
                   </form>
+                  </center>
                 </div>
             </div>
             <button @click.prevent="toggleModal" class="modal-close"></button>
             </center>
           </div>
         </div>
-
         <!-- Delete stuff -->
         <div class="delete-stuff">
           <!-- <form method="post" @submit.prevent="deleteRec"> -->
