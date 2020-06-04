@@ -129,8 +129,6 @@ export default {
     }
   },
     middleware: 'auth',
-    created(){this.reloadpage()},
-
     computed: {
         ...mapGetters(['loggedInUser'])
     },
@@ -166,9 +164,6 @@ export default {
     }, 
     toggleModal() {
       this.showEditModal = !this.showEditModal;
-    },
-    reloadpage(){
-      this.$router.go(0);
     },
     toggleConfirm() {
       this.showDeleteModal = !this.showDeleteModal;
