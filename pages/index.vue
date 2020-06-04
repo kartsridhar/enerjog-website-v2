@@ -118,11 +118,16 @@ export default {
         handleScroll () {
             if (window.scrollY > 10) {
                 this.fixedOnScroll = true
+                document.addEventListener("DOMContentLoaded", function() { 
                 document.querySelector('.main-header').classList.add('scrolled')
+                });
             }
             else {
                 this.fixedOnScroll = false
+                document.addEventListener("DOMContentLoaded", function() { 
                 document.querySelector('.main-header').classList.remove('scrolled');
+                });
+
             }
         }
     },

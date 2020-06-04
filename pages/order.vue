@@ -1,5 +1,4 @@
 <template>
-  <client-only>
     <div>
 		<Navbar/>
     <br>
@@ -116,7 +115,6 @@
     </div>
 
     </div>
-  </client-only>
 </template>
 
 <script>
