@@ -12,7 +12,7 @@
 				Pre order your Enerjog and keep running!
 			</center>
 		</h3>
-    <div class="outerWrapper" id="outerWrapper">
+    <div class="outerWrapper" id="outerWrapper" :style="{ backgroundImage: 'url(' + require('@/assets/img/screenshots/land.jpg') + ')' }">
     <div class="animated-svg-container">
       <svg width="250" height="300" viewBox="20 0 250 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         
