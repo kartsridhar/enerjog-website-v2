@@ -166,6 +166,7 @@ export default {
         })
 
         this.$router.push('/profile')
+        location.reload()
       } catch (e) {
         this.error = e.response.data.message
       }
