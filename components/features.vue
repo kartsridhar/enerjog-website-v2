@@ -13,7 +13,7 @@
             </div>
             <div class="service-title">24/7 tracking &amp; workout mode</div>
             <div class="service-desc">
-              Over 100 pre-loaded workout plans with z-level tracking.
+              Over 100 pre-loaded workout plans with Z-level tracking.
             </div>
           </div>
 
@@ -53,7 +53,7 @@
             </div>
             <div class="service-title">Smartphone notifications</div>
             <div class="service-desc">
-              Universally compatible with all smart phones and tracks notifications.
+              Universally compatible with all smartphones and tracks notifications.
             </div>
           </div>
 

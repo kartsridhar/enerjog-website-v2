@@ -28,7 +28,7 @@
                             <a href="#specs" v-smooth-scroll>Specs</a>
                         </li>
                         <li class="nav-link">
-                            <nuxt-link to="/order">Order</nuxt-link>
+                            <nuxt-link to="/order">Pre-Order</nuxt-link>
                         </li>
                         <li class="nav-link">
                             <a href="#crowdfunding" v-smooth-scroll>Crowdfunding</a>

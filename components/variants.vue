@@ -7,7 +7,7 @@
         </h1>
         <div class="slider-wrapper">
             <div class="slider">
-                <input type="radio" name="slider" class="trigger" id="one" checked="checked" />
+                <input type="radio" name="slider" class="trigger" id="one" />
                 <div class="slide" :style="{ backgroundImage: 'url(' + require('@/assets/img/screenshots/enerjog_colour_blue.jpg') + ')' }">
                 </div><!-- .slide -->
                 <input type="radio" name="slider" class="trigger" id="two" />
@@ -16,7 +16,7 @@
                 <input type="radio" name="slider" class="trigger" id="three" />
                 <div class="slide" :style="{ backgroundImage: 'url(' + require('@/assets/img/screenshots/enerjog_colour_pink.jpg') + ')' }">
                 </div><!-- .slide -->
-                <input type="radio" name="slider" class="trigger" id="four" />
+                <input type="radio" name="slider" class="trigger" id="four" checked="checked"/>
                 <div class="slide" :style="{ backgroundImage: 'url(' + require('@/assets/img/screenshots/enerjog_colour_purple.jpg') + ')' }">
                 </div><!-- .slide -->
                 <input type="radio" name="slider" class="trigger" id="five" />

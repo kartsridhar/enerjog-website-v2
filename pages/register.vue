@@ -68,7 +68,7 @@
 
               <div>
                 <h5>Model</h5>
-                <select v-model="model" class="dropdown">
+                <select v-model="model" class="dropdown" required>
                   <option v-for="(m, idx) in models" :key="idx">
                     {{m.name}}
                   </option>
@@ -86,7 +86,7 @@
 
               <div>
                 <h5>Colour</h5>
-                <select v-model="colour" class="dropdown">               
+                <select v-model="colour" class="dropdown" required>               
                   <option v-for="(c, idx) in colours" :key="idx">
                     {{c.name}}
                   </option>

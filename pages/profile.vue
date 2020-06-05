@@ -44,7 +44,7 @@
                     <div>
                       <label><strong>Model</strong></label>
                       <div>
-                        <select v-model="model">
+                        <select v-model="model" required>
                           <option v-for="(m, idx) in models" :key="idx">
                             {{m.name}}
                           </option>
@@ -56,7 +56,7 @@
                     <div class="field">
                       <label><strong>Colour</strong></label>
                       <div>
-                        <select v-model="colour">
+                        <select v-model="colour" required>
                           <option v-for="(c, idx) in colours" :key="idx">
                             {{c.name}}
                           </option>
@@ -66,6 +66,7 @@
 
                     <div>
                       <button type="submit" id="confirm-btn">Confirm</button>
+                      <button type="submit" id="cancel-btn" @click.prevent="toggleModal">Close</button>
                     </div>
                   </form>
                   </center>

@@ -10,7 +10,7 @@
     </h1>
 		<h3>
 			<center>
-				Pre order your Enerjog and keep running!
+				Pre-order your Enerjog and keep running!
 			</center>
 		</h3>
     <div class="outerWrapper" id="outerWrapper" :style="{ backgroundImage: 'url(' + require('@/assets/img/screenshots/land.jpg') + ')' }">
