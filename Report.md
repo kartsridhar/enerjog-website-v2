@@ -21,7 +21,7 @@ Below are what we feel are the estimates for our grades.
     *   We used JS in most components, to trigger animations and toggle classes (hamburger menu for mobile view).
     * We built the API using ***AdonisJS*** and it uses ***JWT*** for our authentication module . The API itself has 5 end points: ```\register``` , ```\login```, ```\me```, ```\change``` and ```\destroy```.API Has CORS enabled. we use authentication tokens in the local data storage to manage sessions for users.
     * we use AdonisJS to handle all Post and Get requests which pass these onto to asynch methods declared in the controller in ```enerjog-api/Controllers/AuthenticationController.js```. Here we use the models defined in ```enerjog-api/Models``` to perform CRUD functionaity on the embedded database and then return responses back to the website.
-    * we also make use of ***Vuex store*** to extract getters from the store which we call in our computed property once records have updated in the database.
+    * we also make use of ***Vuex store*** to extract getters from the store which we call in our computed property to ensure the information displayed in the website is consistent with the database. 
     * we also created a guest middleware to restrict login and register pages to only users that are not logged in.
 *   PNG - **A+**
     *   Most of the product images were taken from the original website itself, found [here](https://www.letscom.com/). The rest of the images are royalty free.
