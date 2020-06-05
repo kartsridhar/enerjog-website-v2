@@ -28,8 +28,8 @@ This starts the Website on ```http://localhost:3000```.
 
 ### Test Login
 Here is a sample user you can use to login. 
-*   **Username** - test
-*   **Password** - abc123
+*   **Email** - test@email.com
+*   **Password** - test123
 
 However, if you wish to register with different details, you can do so through the /register page
 
