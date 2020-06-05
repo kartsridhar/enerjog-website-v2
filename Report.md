@@ -1,8 +1,8 @@
 # Web Technologies - Final Report
 
 The group members are **Asel Kitulagoda (ak17520)** and **Karthik Sridhar (ks17226)**. Our project is a fully responsive multi-page website, selling a futuristic fitness tracker called Enerjog. This is an idea inspired from our Year 2 unit, Computer Science in Society. The project consists of 2 parts:
-*   **enerjog-api** - The SQLite database API, which runs on port ```3333``` and hosted on [http://enerjog-api.herokuapp.com]().
-*   **enerjog-website** - The main website, which runs on port ```3000``` and hosted on [https://enerjog-tracker.herokuapp.com]().
+*   **enerjog-api** - The SQLite database API, which runs on port ```3333``` and hosted on [http://enerjog-api.herokuapp.com](http://enerjog-api.herokuapp.com).
+*   **enerjog-website** - The main website, which runs on port ```3000``` and hosted on [https://enerjog-tracker.herokuapp.com](https://enerjog-tracker.herokuapp.com).
 
 Setup, Installation and Running instructions are described in the ```README.md```.
 
