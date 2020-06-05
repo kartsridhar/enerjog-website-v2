@@ -5,14 +5,19 @@
 		</head>
     <div class="container">
       <div class="navbar-brand">
-        <nuxt-link class="navbar-item" to="/">Home</nuxt-link>
-        <button class="button navbar-burger">
+      <a class="navbar-item" href="/">
+        <nuxt-link class="navbar-item" to="/">
+        <img src="~/assets/img/png/logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+        </nuxt-link>
+
+      </a>
+        <button class="button navbar-burger" aria-label="menu" aria-expanded="false" @click="isOpen = !isOpen" v-bind:class="{'is-active': isOpen}" >
           <span></span>
           <span></span>
           <span></span>
         </button>
       </div>
-      <div class="navbar-menu">
+      <div class="navbar-menu" v-bind:class="{'is-active': isOpen}">
         <div class="navbar-end">
           <div class="navbar-item has-dropdown is-hoverable" v-if="isAuthenticated">
             <a class="navbar-link">
@@ -38,6 +43,12 @@
 import { mapGetters } from 'vuex'
 
 export default {
+      data: function() {
+        return {
+            isOpen: false
+        }
+    },
+
   methods: {
     async logout() {
       await this.$auth.logout();
